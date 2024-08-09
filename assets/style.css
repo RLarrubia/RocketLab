@@ -1,0 +1,334 @@
+/* Eliminar márgenes y padding del body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #e0e0e0, #858484);
+}
+
+/* Asegurar que html y body ocupen todo el espacio disponible */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.content {
+margin: 0;
+}
+
+.navbar-icon {
+  height: 70px;  /* Ajusta el tamaño del icono */
+  margin-right: 10px;  /* Espacio entre el icono y el texto */
+  vertical-align: middle;  /* Alinea verticalmente el icono con el texto */
+}
+
+/* Modern button style */
+.button-modern {
+  background-color: #1E90FF; /* Azul moderno */
+  color: white;
+  border: 2px solid #1E90FF;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center; /* Asegura el centrado vertical */
+  justify-content: center; /* Asegura el centrado horizontal */
+}
+
+.button-modern:hover {
+  background-color: #1C86EE; /* Color al pasar el ratón */
+  border-color: #1C86EE;
+  transform: scale(1.1);
+}
+
+.button-modern:active {
+  background-color: #1874CD; /* Color al hacer clic */
+  border-color: #1874CD;
+  transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+
+.plot-container {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.svg-container {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+/* Title box style */
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  display: grid;
+  align-items: right;
+  padding: 20px;
+  width: 100%;
+}
+
+.title-label {
+font-size: 50px;
+}
+
+.input-block-container {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+
+.input-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contour-graph-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+.input-block2 {
+  display: flex;
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  justify-content: space-between; /* Distribuye los divs equitativamente */
+  padding: 20px;
+}
+
+.input-label-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 5px;
+}
+.input-label {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Custom div style */
+.div-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right:20px;
+  flex: 1; /* Permite que los divs ocupen el espacio equitativamente */
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: all 0.01s ease;
+  background-color: rgba(255,255,255,1);
+}
+
+.div-input:hover {
+  border-width: 3px; /* Aumenta el grosor del borde */
+  border-color: #1E90FF; /* Cambia el color del borde */
+  padding: 8px; /* Ajusta el padding para compensar el aumento del borde */
+  transform: scale(1.05);
+}
+
+.name-input-box {
+  width: auto; /* Ajusta el ancho según el contenido */
+  display: flex;
+  align-items: center;
+  font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+  font-weight: bold;
+}
+
+.input-box {
+  width: auto; /* Ajusta el ancho según el contenido */
+  border: none;
+  color: black;
+  outline: none;
+  text-align: right; /* Alinea el texto a la derecha */
+  margin-left: auto;
+  background-color: rgba(0,0,0,0);
+}
+
+.units-input-box {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  margin-left: 10px; /* Espacio entre el input y las unidades */
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  margin-top: 60px;
+}
+
+.button-div {
+  margin: 0 10px; /* Espacio fijo entre los botones */
+}
+
+.error-message-box {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  /* Asegúrate de que el contenedor tenga una altura */
+  text-align: center;  /* Centra el texto dentro del contenedor */
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.success-message-box {
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  /* Asegúrate de que el contenedor tenga una altura */
+  text-align: center;  /* Centra el texto dentro del contenedor */
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.configuration-name-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center; /* Centra verticalmente el contenido */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  margin-top: 60px;
+}
+
+.configuration-name-div {
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.config-label {
+  width: 100%;
+  font-size: 25px;
+}
+
+.config-input-box {
+  font-size: 20;
+  color: black;
+  border: none;
+  width: 200px;
+  direction: ltr; /* Asegura que el texto se alinee de izquierda a derecha */
+  text-align: left; /* Alinea el texto a la izquierda */
+  background-color: rgba(0,0,0,0);
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; 
+  z-index: 1000; /* Asegura que el modal esté sobre otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita el scroll si es necesario */
+  background-color: rgb(0,0,0); /* Color de fondo */
+  background-color: rgba(0,0,0,0.4); /* Fondo borroso */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centrado vertical y horizontal */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ancho del contenido del modal */
+  max-width: 500px; /* Ancho máximo del modal */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons .button-modern {
+  width: 45%;
+}
+
+.navbar {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-left:0;
+}
+
+.navbar-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 5px;
+  margin-right: 30px;
+}
+
+.navbar-link {
+  color: #f6f5f5;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar-link:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.dropdown-down-container {
+  justify-content: left;
+  align-items: center;
+}
+
+.dropdown-nozzle {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(0,0,0,0);
+  color: #333;
+}
+
+.configuration-name-container-simulations{
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  align-items: center; /* Centra verticalmente el contenido */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  margin-bottom: 30px;
+}
+
+.checklist-container {
+  display: flex;
+  justify-content: center;
+}
+
+.checklist-div {
+  width: 100px;
+  display: flex;
+  margin: 0 10px; /* Espacio fijo entre los botones */
+}
