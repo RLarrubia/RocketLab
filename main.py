@@ -10,6 +10,7 @@ import bell_contour
 import io
 import rocket_calculator
 import shutil
+import xlsxwriter
 from openpyxl import load_workbook
 
 # Crear la aplicación Dash
@@ -19,7 +20,7 @@ app.config.suppress_callback_exceptions = True
 
 # Función para listar archivos en una carpeta específica
 def list_files():
-    file_names = [os.path.basename(file).split('.')[0] for file in glob.glob(os.path.join(os.getcwd()+'\\configurations',f'*.xlsx'))]
+    file_names = [os.path.basename(file).split('.')[0] for file in glob.glob(os.path.join(os.getcwd()+'/configurations',f'*.xlsx'))]
     return file_names
 
 # Layout de la página 2
